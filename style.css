@@ -1,0 +1,29 @@
+.canvas {
+    display: flex;
+    justify-content: center;
+}
+
+.divPontos {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
+body {
+    background-color: #707273;
+    font-family: 'Courier New', monospace;
+}
+
+canvas {
+    border: 2px dashed black;
+}
+
+p {
+    margin-top: 1px;
+    margin-right: 2px;
+    text-align: center;
+}
