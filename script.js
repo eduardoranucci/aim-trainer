@@ -19,7 +19,7 @@ function dispara(ctx) {
 
     brush.fillStyle = corAleatoria;    
     brush.beginPath();
-    brush.arc(x, y, 3, 0, 2 * 3.14);
+    brush.arc(x, y, 4, 0, 2 * 3.14);
     brush.fill();
 
     if (acertou == false) {
@@ -54,6 +54,10 @@ function desenhaAlvo(x, y) {
     brush.beginPath();
     brush.arc(x, y, raio, 0, 2 * 3.14);
     brush.fill();
+
+    const elemento = document.querySelector('#alvos');
+    alvos = parseInt(elemento.innerHTML);
+    elemento.innerHTML = alvos+1;
 }
 
 function apagaAlvo(x, y) {
